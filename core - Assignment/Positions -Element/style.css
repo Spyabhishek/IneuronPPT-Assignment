@@ -1,0 +1,37 @@
+.static-example {
+    margin: 80px;
+    border: 2px solid red;
+    position: static;
+}
+
+.fixed-example {
+    border: 2px solid greenyellow;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.sticky-example {
+    border: 2px solid green;
+    position: sticky;
+    top: 50px;
+}
+
+.relative-example {
+    border: 2px solid yellow;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.container {
+    border: 2px solid black;
+    position: relative;
+    height: 200px;
+}
+
+.absolute-example {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
