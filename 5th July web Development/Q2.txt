@@ -1,0 +1,9 @@
+Q.2 Explain Semantic tags in html? And why do we need it?
+
+Ans. Semantic tags are elements that provide meaning and structure to the content of a web page. It clearly describes its meaning to the browser and developer as well.
+E.g. - <header>, <footer>, <form>
+
+Uses - 
+1. Semantic tags help the browser determine the purpose of the page and its content.
+2. It also helps in Search Engine Optimization(SEO).
+3. It enhance code readability and make it easier for developers to maintain and update the website.

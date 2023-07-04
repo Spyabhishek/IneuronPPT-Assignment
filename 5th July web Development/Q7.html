@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Player</title>
+    <style>
+        #music-player {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        #play-btn {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="music-player">
+        <button id="play-btn" onclick="playMusic()">Play</button>
+        <button id="pause-btn" onclick="pauseMusic()">Pause</button>
+        <audio id="audio" src="./Tere Hawaale_320(PagalWorld.com.se).mp3"></audio>
+    </div>
+
+    <script>
+        var audio = document.getElementById('audio');
+
+        function playMusic() {
+            audio.play();
+        }
+
+        function pauseMusic() {
+            audio.pause();
+        }
+    </script>
+</body>
+
+</html>

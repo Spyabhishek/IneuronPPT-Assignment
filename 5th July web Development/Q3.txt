@@ -1,0 +1,13 @@
+Q.3 Differentiate between HTML Tags and Elements?
+
+Ans. 
+HTML TAGS -
+1. HTML tags are used to hold the HTML elements.
+2. Tags are enclosed in angle brackets. (<> , </>)
+3. Tags can contain attributes, which provides additional information about the element.
+4. Examples - <P> , <h1>, <a>, <img>
+
+Elements - 
+1. HTML element holds the content.
+2. Whatever written within a HTML tag are HTML elements.
+3. HTML elements specifies the general content.

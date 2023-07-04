@@ -1,0 +1,21 @@
+Q.9 What’s the difference between html tag and attribute and give example of some global attributes?
+
+Ans: 
+
+HTML Tag:
+An HTML tag represents an element or a structure within an HTML document. It consists of the tag name enclosed in angle brackets ("<" and ">"). Tags define the purpose and behavior of elements on a webpage. Examples of HTML tags include <div>, <p>, <h1>, <a>, <img>, etc.
+Ex: 
+<div>This is a div tag.</div>
+<p>This is a paragraph tag.</p>
+
+HTML Attribute:
+HTML attributes provide additional information or modify the behavior of HTML elements. Attributes are added to the opening tag of an element and consist of a name-value pair. They are used to specify various properties such as the source of an image, the URL of a link, the width of an element, and more. Each HTML element may have different attributes associated with it.
+Ex:
+<img src="image.jpg" alt="An image">
+<a href="https://google.co.in">Link</a>
+
+
+Global Attributes:
+Global attributes are a set of attributes that can be used with any HTML element, regardless of its type. These attributes provide common functionalities and apply to multiple elements.
+Ex:
+class, div, style, src.
