@@ -1,0 +1,11 @@
+Q.1 What’s Box Model in CSS ? 
+
+Ans. -  It is a container that contains multiple properties including borders, margins, padding, and content itself. It is used to create the design and layout of web pages.
+
+- content : It contains the actual data in the form of text, images, or others. It can be sized using the width and height property.
+
+- Padding : This property is used to create space around the element, inside any defined border.
+
+- border : This property is used to cover the content and any padding . It also allows setting the style, color, and width of the border.
+
+- margin : This property is used to create space around the element i.e. around the border area.

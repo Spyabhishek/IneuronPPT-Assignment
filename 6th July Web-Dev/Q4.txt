@@ -1,0 +1,10 @@
+Q.4 Whats difference between Inline, Inline Block and block ?
+
+Ans : 
+
+Inline: An inline element does not start on a new line and only takes up as much width as its content requires. It allows other elements to be displayed alongside it on the same line. Ex : <span>, <strong>, <a>, etc.
+
+Inline-block: Inline-block elements share some characteristics with inline elements, such as not starting on a new line and allowing other elements to be displayed alongside them. Inline-block elements can have width, height, margins, and padding applied to them, which inline elements cannot. This allows inline-block elements to have block-level properties while still being displayed inline.
+Ex - <img>, <button>, etc.
+
+Block: Block-level elements start on a new line and occupy the full available width of their parent container by default. They create a block-level formatting context, meaning they can have margins, padding, and dimensions applied to them. Ex - <div>, <p>, etc.

@@ -1,0 +1,14 @@
+Q.7 What’s Grid & Flex and difference between them?
+
+Ans. 
+
+Flexbox : Flexbox is useful for creating flexible and dynamic layouts where items can expand and shrink based on available space. It is designed for one-dimensional layouts, either in a row or a column.
+
+Grid : CSS Grid Layout is a two-dimensional system that allows for precise placement and alignment of elements within a grid container. It enables the creation of complex grid-based layouts with rows and columns. Grid Layout is well-suited for both simple and complex layouts, where elements can be positioned with more control and precision.
+
+differences : 
+
+- Dimensionality: Flexbox is a one-dimensional layout system, whereas Grid is a two-dimensional layout system.
+Content direction: Flexbox focuses on arranging elements in a row or column, while Grid provides control over both rows and columns.
+- Item placement: Flexbox offers control over the order and alignment of items along the main and cross axes. Grid provides more fine-grained control over item placement within a grid layout.
+- Layout complexity: Flexbox is typically used for simpler layouts, while Grid is more suitable for complex, grid-based layouts.

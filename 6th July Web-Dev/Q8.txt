@@ -1,0 +1,39 @@
+Q.8 Difference between absolute and relative and sticky and fixed position explain with example.
+
+Ans. 
+
+Absolute: The position of the element will be relative to the closest positioned ancestor.
+
+Relative: The element remains in the normal flow of the document but left, right, top, and bottom affects.
+
+Sticky: The element with position: sticky and top: 0 played a role between fixed & relative based on the position where it is placed.
+
+Fixed: The position of the element will be positioned relative to the viewport.
+
+Example - 
+
+.fixed-example {
+    border: 2px solid greenyellow;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.sticky-example {
+    border: 2px solid green;
+    position: sticky;
+    top: 50px;
+}
+
+.relative-example {
+    border: 2px solid yellow;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.absolute-example {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}

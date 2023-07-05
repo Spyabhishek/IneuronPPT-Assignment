@@ -1,0 +1,5 @@
+Q.3 What is VW/VH ?
+
+Ans : VW(view-width) it works like percentage unit. Like 10vw is equivalent to occupying 10% of entire visible screen width.
+
+VH(view-height) It works like the percentage unit as well. Specifying 10vh is equivalent to occupying 10% of entire visible screen height.

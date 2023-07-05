@@ -1,0 +1,10 @@
+Q.6 What’s z-index and How does it Function ?
+
+Ans : Z Index (z-index) is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index.
+It only works on positioned elements (position:absolute, position:relative, or position:fixed). It accepts the integer value.
+
+It's important to note that the z-index property works within the stacking context of a parent element. If an element is positioned within a parent element with a lower z-index, it cannot be stacked above elements outside that parent element's stacking context, regardless of its own z-index value.
+
+The z-index property is particularly useful when dealing with overlapping elements, such as dropdown menus, tooltips, or elements with a fixed position. It allows you to control the visual layering and stacking of elements on the webpage.
+
+
