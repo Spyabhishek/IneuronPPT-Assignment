@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    border: 5px solid black;
+    margin-inline: 50px;
+    text-align: center;
+}
+
+.heading {}
+
+.one img {
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+
+.two img {
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    footer{
+        text: The above image show small Screen Output;
+    }
+}

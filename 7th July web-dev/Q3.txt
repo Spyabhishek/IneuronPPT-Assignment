@@ -1,0 +1,22 @@
+Q.3 Explain the concept of Breakpoints in Responsive Web Design and How They are used in Media Queries.
+
+Ans - Breakpoints are used in conjunction with media queries to define different sets of CSS rules that apply at different device widths.
+
+Ex - 
+ CSS rules for devices with a maximum width of 600px 
+ 
+@media screen and (max-width: 600px) {
+ 
+}
+
+ CSS rules for devices with a minimum width of 601px and a maximum width of 1024px 
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+}
+
+ CSS rules for devices with a minimum width of 1025px
+
+@media screen and (min-width: 1025px) {
+  
+}

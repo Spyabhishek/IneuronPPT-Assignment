@@ -1,0 +1,67 @@
+/* https://www.getonecard.app/images/icons/cta_apply_now.svg */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    
+}
+
+.one {
+    margin: 15px;
+    color: blue;
+
+}
+
+.two {
+    margin-top: 30px;
+    width: 500px;
+    margin-left: 20px;
+
+}
+
+.two1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.one3{
+height: 100px;
+}
+
+.two1 img {
+    
+    margin-left: 20px;
+    height: 250px;
+    width: 420px;
+
+}
+
+.hero{
+    text-align: right;
+    align-items: left;
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38vh;
+    background-color: black;
+    margin-top: 80px;
+    
+
+}
+.four h1{
+        color: blue;
+        margin-bottom: 20px;
+    
+}
+
+.four h3{
+    color: white;
+    margin: 10px;
+    text-align: center;
+}

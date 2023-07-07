@@ -1,0 +1,5 @@
+Q.5 What is the purpose of the orientation media feature?
+
+Ans - The orientation media feature in CSS is used to target and apply specific styles based on the orientation of a device's viewport. It allows web developers to adjust the layout, design, or other visual aspects of a webpage based on whether the device is in a portrait or landscape orientation.
+
+The purpose of the orientation media feature is to optimize the presentation of content depending on the way the user is holding or viewing the device. By detecting the orientation, developers can adapt the design to provide a more intuitive and visually pleasing experience.

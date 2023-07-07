@@ -1,0 +1,11 @@
+Q.2 How do you define a media query in CSS?
+
+Ans - To define a media query in CSS, you use the ' @media 'rule followed by a specific condition or set of conditions within parentheses.
+Ex - @media media-type and (condition) {
+  /* CSS rules specific to the media query */
+}
+
+Like devices with a maximum screen width of 600 pixels :
+@media screen and (max-width: 600px) {
+
+}
