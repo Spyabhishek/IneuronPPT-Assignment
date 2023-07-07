@@ -1,0 +1,7 @@
+Q.2 Explain Temporal Dead Zone?
+
+Ans - A temporal dead zone (TDZ) is the area of a block where a variable is inaccessible until the moment the computer completely initializes it with a value. Initialization occurs when you assign an initial value to a variable.
+
+When a variable is declared using "let" or "const", it is hoisted to the top of its block, but it is not initialized until the line of code where it is declared is reached during the program's execution. Until that point, the variable is said to be in the TDZ. If you try to access the variable within the TDZ, a ReferenceError will be thrown.
+
+The TDZ ends when the execution reaches the line of code where the variable is declared and initialized.

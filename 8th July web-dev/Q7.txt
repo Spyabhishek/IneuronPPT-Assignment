@@ -1,0 +1,5 @@
+Q.7 What’s difference between map & forEach?
+
+Ans -  
+
+forEach() and map() methods are both used to loop through arrays and objects. The forEach() method does not return a new array, whereas the map() method returns a new array. The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.

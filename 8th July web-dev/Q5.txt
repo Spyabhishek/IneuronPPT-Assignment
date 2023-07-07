@@ -1,0 +1,11 @@
+Q.5 What is the difference between let and const ?
+
+Ans - 
+
+1. Variable Assignment: Both 'let' and 'const' are used to declare variables.
+- 'let' allows variables to be reassigned with a new value.
+- const variables, are assigned a value that cannot be changed or reassigned.
+
+2. Block Scoping: Both 'let' and 'const' are block-scoped, meaning they are only accessible within the block (enclosed by curly braces) in which they are declared. This behavior is different from var, which has function scope.
+
+3. Hoisting: Both 'let' and 'const' are hoisted to the top of their block scope, but they are not initialized until the line where they are declared is reached. This results in the Temporal Dead Zone (TDZ) behavior.

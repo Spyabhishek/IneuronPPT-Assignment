@@ -1,0 +1,30 @@
+Q.3 Difference between var & let?
+
+Ans -
+
+ Scoping: Variables declared with 'var' are function-scoped, meaning they are accessible within the entire function in which they are declared. On the other hand, variables declared with 'let' are block-scoped, meaning they are only accessible within the block (enclosed by curly braces) in which they are declared.
+
+function example() {
+  var x = 100;
+  let y = 200;
+  
+  if (true) {
+    var x = 300; // Same variable 'x' as above (function scope)
+    let y = 400; // Different variable 'y' (block scope)
+    console.log(x); // 300
+    console.log(y); // 400
+  }
+  
+  console.log(x); // 30
+  console.log(y); // 20 (outer 'y' is unaffected by the inner block)
+}
+
+
+ Hoisting: Variables declared with 'var' are hoisted to the top of their scope, meaning they can be accessed before they are declared. However, they are initialized with a value of undefined. On the other hand, variables declared with 'let' are also hoisted but are not initialized until the line where they are declared is reached (resulting in the Temporal Dead Zone behavior).
+
+Code Example - 
+console.log(x); // undefined
+var x = 20;
+
+console.log(y); // ReferenceError: Cannot access 'y' before initialization
+let y = 50;

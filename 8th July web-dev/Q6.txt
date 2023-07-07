@@ -1,0 +1,8 @@
+Q.6  What is template literals in ES6 and how do you use them?
+
+Ans - Template literals provide an enhanced way to work with strings in JavaScript. They allow for easy string interpolation and multiline strings. Template literals are enclosed by backticks (` `) instead of single quotes (' ') or double quotes (" ").
+
+Ex - 
+const name = "Alice";
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // Output: Hello, Alice!

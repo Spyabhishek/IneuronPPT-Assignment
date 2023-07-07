@@ -1,0 +1,6 @@
+Q.1 Explain Hoisting in JavaScript.
+
+Ans -  Hoisting is the phenomenon in js, by which you can access the variable and function even before you have initialized it. 
+-- During the memory creation phase of code execution, variables are assigned the default value of "undefined", whereas functions are stored in memory in their entirety.
+-- When attempting to access a variable before it is declared, JavaScript will output the value undefined, while attempting to access an undeclared variable will result in a ReferenceError.
+-- Arrow functions are treated like variables during the memory creation phase, and so attempting to call an arrow function before it is declared will result in an error.

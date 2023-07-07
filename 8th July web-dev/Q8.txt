@@ -1,0 +1,29 @@
+Q.8 How can you destructure objects and arrays in ES6?
+
+Ans - 
+
+-- Object 
+
+const person = { name: 'Abhishek', age: 23, city: 'Jaipur' };
+
+// Destructuring assignment
+const { name, age, city } = person;
+
+console.log(name); // Output: Abhishek
+console.log(age); // Output: 23
+console.log(city); // Output: Jaipur
+
+-- Arrays 
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Destructuring assignment
+const [a, b, c, d, e] = numbers;
+
+console.log(a); // Output: 1
+console.log(b); // Output: 2
+console.log(c); // Output: 3
+console.log(d); // Output: 4
+console.log(e); // Output: 5
+
+

@@ -1,0 +1,10 @@
+Q.4 What are the major features introduced in ECMAScript 6?
+
+Ans - Major features are:-
+
+1. Blocked-Scoped Declarations - let and const
+2. Arrow function - hello =() =>{console.log("Hello")}
+3. Classes - Classes are template for creating objects.Classes provide a cleaner syntax for creating objects and implementing inheritance.
+4. Template Literals: Template literals allow for easy string interpolation and multiline strings. They are enclosed in backticks (` `) and can contain embedded expressions using ${expression}.
+5. Spread and Rest Operators
+

@@ -1,0 +1,28 @@
+Q.10 What is the purpose of the spread operator (...) in ES6?
+
+Ans - 
+
+- Array Spreading - 
+
+const numbers = [1, 2, 3];
+console.log(...numbers); // Output: 1 2 3
+
+const sum = (a, b, c) => a + b + c;
+console.log(sum(...numbers)); // Output: 6
+
+const mergedArray = [...numbers, 4, 5, 6];
+console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+
+- Object Spreading - 
+
+const person = { name: 'Alice', age: 25 };
+const copiedPerson = { ...person };
+
+console.log(copiedPerson); // Output: { name: 'Alice', age: 25 }
+
+const additionalInfo = { city: 'New York', occupation: 'Engineer' };
+const mergedPerson = { ...person, ...additionalInfo };
+
+console.log(mergedPerson);
+// Output: { name: 'Alice', age: 25, city: 'New York', occupation: 'Engineer' }
