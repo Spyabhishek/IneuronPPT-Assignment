@@ -1,0 +1,13 @@
+Q.6 What are Promises & Explain Some Three Methods of Promise.
+
+Ans. - 
+
+Promises are a feature introduced in ECMAScript 2015 (ES6) that provide a more structured and flexible way to handle asynchronous operations in JavaScript. A Promise represents the eventual completion or failure of an asynchronous operation and allows you to chain operations, handle success or error cases, and avoid callback hell.
+
+A Promise object is in one of three states:
+
+Pending: The initial state, representing that the operation is still in progress and the Promise's outcome is not yet determined.
+
+Fulfilled: The state representing a successful completion of the operation. The Promise is fulfilled with a value.
+
+Rejected: The state representing a failed completion of the operation. The Promise is rejected with a reason or error.

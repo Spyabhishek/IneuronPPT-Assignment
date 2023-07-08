@@ -1,0 +1,7 @@
+Q.1 What’s difference between Synchronous and Asynchronous?
+
+Ans - 
+
+Synchronous: In a synchronous operation, the execution of a synchronous task blocks or waits for the completion of the previous task before proceeding to the next one. Each task is dependent on the completion of the preceding task.
+
+Asynchronous: Asynchronous operations allow tasks or events to occur independently and concurrently, without waiting for the completion of previous tasks. Each task is initiated and then executed separately, without blocking the progress of the overall process. It is often used in scenarios where waiting for a task to complete would cause delays or hinder the overall performance.

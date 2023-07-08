@@ -1,0 +1,7 @@
+Q.2 What are Web Apis ?
+
+Ans - Application Programming Interfaces, are sets of rules and protocols that allow different software applications to communicate and interact with each other over the internet. 
+
+Web APIs are typically used in web development to facilitate the exchange of data between different applications or services. They define a set of methods, data formats, and rules that govern how the communication should take place. The most common type of web API is the REST (Representational State Transfer) API, which is based on a set of HTTP protocols and principles.
+
+By using APIs, developers can integrate functionalities such as retrieving data, submitting data, performing actions, or even embedding third-party services into their own applications.

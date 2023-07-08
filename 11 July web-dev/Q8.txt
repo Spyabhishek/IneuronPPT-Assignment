@@ -1,0 +1,29 @@
+Q.8 Explain Purpose of Try and Catch Block & Why do we need it?
+
+Ans - 
+The 'try' and 'catch' blocks are used in JavaScript for error handling. They provide a way to handle potential errors or exceptions that may occur during the execution of a block of code. The purpose of the try and catch blocks is to gracefully handle errors and prevent the program from abruptly terminating.
+
+try block:
+The try block is used to enclose a section of code where an error might occur. It allows you to specify the code that should be executed, and if an error occurs within that code, it is captured.
+
+Ex - 
+try {
+  const result = someFunction(); // Potential error
+  console.log("Result:", result);
+} catch (error) {
+  console.log("An error occurred:", error);
+}
+
+
+catch block:
+The catch block is used to handle and process the error caught by the try block. It specifies the code that should be executed when an error occurs.
+
+Ex - 
+try {
+  const result = someFunction(); // Potential error
+  console.log("Result:", result);
+} catch (error) {
+  console.log("An error occurred:", error);
+}
+
+The main purpose of the 'try' and 'catch' blocks is to prevent unhandled exceptions from crashing the program and to provide a mechanism for handling errors gracefully. They allow you to take specific actions based on the type of error, log useful information, or display appropriate messages to the user.

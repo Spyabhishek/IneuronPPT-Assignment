@@ -1,0 +1,25 @@
+Q.7 What’s async & await Keyword in JavaScript?
+
+Ans - The async and await keywords are part of the ECMAScript 2017 (ES8) update to JavaScript. They provide a syntactical sugar on top of Promises and offer a more concise and readable way to write asynchronous code.
+
+async:
+The 'async' keyword is used to declare an asynchronous function. It allows the function to use the await keyword inside its body to pause the execution until a Promise is fulfilled or rejected.
+
+Ex - async function fetchData() {
+  const response = await fetch("");
+  const data = await response.json();
+  return data;
+}
+
+await:
+The 'await' keyword can only be used inside an async function. It is used to pause the execution of the function until a Promise is resolved or rejected. When used with a Promise, it waits for the Promise to settle and then returns the fulfilled value.
+
+Ex - async function fetchAndProcessData() {
+  try {
+    const data = await fetchData();
+    console.log("Fetched data:", data);
+    // Perform further operations
+  } catch (error) {
+    console.log("Error occurred:", error);
+  }
+}

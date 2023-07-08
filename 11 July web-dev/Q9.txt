@@ -1,0 +1,26 @@
+Q.9 Explain fetch.
+
+Ans - 
+
+'fetch' is a built-in JavaScript function introduced in ECMAScript 2015 (ES6) that provides an easy and modern way to make network requests, typically to retrieve resources from a server. It is an alternative to older techniques like XMLHttpRequest (XHR) and offers a more flexible and powerful API for handling HTTP requests and responses.
+
+The fetch function returns a Promise that resolves to the Response object representing the server's response to the request. This allows you to work with the response data in a more structured manner using Promises and modern JavaScript syntax.
+
+Ex - 
+
+fetch('https://api.example.com/data')
+  .then(function(response) {
+    if (response.ok) {
+      return response.json(); // Parse response as JSON
+    } else {
+      throw new Error('Network response was not OK');
+    }
+  })
+  .then(function(data) {
+    console.log(data); // Process the retrieved data
+  })
+  .catch(function(error) {
+    console.log('Fetch error:', error);
+  });
+
+  The fetch function also allows you to perform other HTTP methods like POST, PUT, DELETE, etc., by specifying the appropriate HTTP method in the options ob
