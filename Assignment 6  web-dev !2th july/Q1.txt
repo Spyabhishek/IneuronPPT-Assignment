@@ -1,0 +1,21 @@
+Q.1 What’s Constructor And Its Purpose?
+
+Ans - 
+
+In JavaScript, a constructor is a special method that is used to create and initialize objects of a class. It is called automatically when a new object is created from the class. The constructor method is defined using the 'constructor' keyword.
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+// Creating a new object using the constructor
+const person1 = new Person("spy", 25);
+
+console.log(person1.name); // Output: "spy"
+console.log(person1.age); // Output: 25
+
+
+In the example above, the Person class has a constructor method that takes name and age as parameters. Inside the constructor, the this keyword refers to the newly created object. The properties name and age are assigned the values provided during object creation using the new keyword.

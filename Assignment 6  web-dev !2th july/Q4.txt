@@ -1,0 +1,9 @@
+Q.4 Explain OOPS ? 
+
+Ans - OOPS stands for Object-Oriented Programming Paradigm. It is a programming paradigm that organizes software design around objects, which are instances of classes. OOPS focuses on modeling real-world entities as objects and defining their behavior through classes and their interactions.
+
+There are 4 main principles of OOPS:
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction

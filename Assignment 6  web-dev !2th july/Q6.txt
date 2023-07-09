@@ -1,0 +1,3 @@
+Q.6 Whats Polymorphism and Purpose of it?
+
+Ans - Polymorphism means the ability of objects of different classes to respond to the same method or message in different ways. It allows objects of different types to be treated as objects of a common superclass. Polymorphism enables code flexibility and extensibility by providing a way to write code that can work with objects of different types.

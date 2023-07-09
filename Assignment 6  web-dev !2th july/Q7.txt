@@ -1,0 +1,9 @@
+Q.7  Whats Inheritance and Purpose of it?
+
+Ans -  Inheritance is a mechanism that allows a class to inherit properties and methods from another class, known as the superclass or parent class. The class that inherits these properties and methods is called the subclass or child class. Inheritance promotes code reusability and establishes a hierarchical relationship between classes.
+
+Purpose of Inheritance are :
+1. Code reusability
+2. Extension and Specialization
+3. Polymorphism
+

@@ -1,0 +1,11 @@
+Q.8 Whats Encapsulation and Purpose of it ?
+
+Ans - 
+
+Encapsulation refers to the bundling of data and methods (functions) together within a class. It allows the internal state (data) of an object to be hidden from the outside, and only the necessary methods are exposed for interacting with the object. This helps in achieving data security and abstraction.
+
+Purpose of encapsulation are:
+
+- Data Protection and Security.
+- Modularity and Maintainability.
+- Code Organization and Readability.

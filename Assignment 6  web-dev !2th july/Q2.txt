@@ -1,0 +1,13 @@
+Q.2 Explain This Keyword and Its Purpose?
+
+
+Ans - 
+
+In JavaScript, the 'this' keyword refers to the current execution context or the object on which a method is being called. The value of this depends on how a function is invoked and is dynamically determined at runtime. The purpose of the this keyword is to provide a way to access and manipulate the properties and methods of the current object within a function.
+
+function Person(name) {
+  this.name = name;
+}
+
+const person1 = new Person("abhishek");
+console.log(person1.name); // Output: "abhishek"

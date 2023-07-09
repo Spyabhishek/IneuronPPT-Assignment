@@ -1,0 +1,26 @@
+Q.10 What’s Super Keyword & What it does?
+
+Ans - 
+
+In JavaScript, the super keyword is used to call functions on an object's parent or superclass. It is often used within the context of a subclass constructor to invoke the constructor of the parent class and access its properties and methods.
+
+The main purpose of the 'super' keyword is to enable and control inheritance in JavaScript. It allows a subclass to inherit behavior from its superclass while providing the flexibility to override or extend that behavior.
+
+class Animal {
+  speak() {
+    console.log("The animal makes a sound.");
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    super.speak(); // Call the parent method
+    console.log("The dog barks.");
+  }
+}
+
+const myDog = new Dog();
+myDog.speak();
+// Output:
+// "The animal makes a sound."
+// "The dog barks."

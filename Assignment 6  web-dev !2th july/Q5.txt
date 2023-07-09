@@ -1,0 +1,4 @@
+Q.5 Whats Abstraction and Its Purpose?
+
+Ans - Abstraction involves the concept of representing essential features and behavior of real-world objects in a simplified manner. It focuses on the 'what' rather than the 'how'. Abstraction allows developers to create abstract classes and interfaces that define the common structure and behavior of a group of objects, without specifying the implementation details.
+
