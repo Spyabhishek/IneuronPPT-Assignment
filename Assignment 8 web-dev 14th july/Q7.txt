@@ -1,0 +1,9 @@
+Q.7 Explain Prop Drilling in React & Ways to avoid it.
+
+Ans - Prop drilling is a situation when the same data is being sent at almost every level due to requirements in the final level. Here is a diagram to demonstrate it better. Data needed to be sent from Parent to ChildC.
+
+Prop drilling can lead to code that is harder to maintain and understand, as components in the middle of the tree become "coupled" to the data flow, even though they have no use for it. It can also make refactoring and component reusability more challenging.
+
+Ways to avoid it :-
+
+Techniques like context API or state management libraries like Redux can be used to manage and access shared data across components without the need for explicit prop passing through intermediate components. These approaches provide a more centralized and efficient way to handle shared data in a React application.

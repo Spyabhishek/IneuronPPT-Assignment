@@ -1,0 +1,19 @@
+Q.1  Whats React and its pros and cons?
+
+Ans -  
+React.js
+	- React is a JavaScript library for building user interfaces.
+	- React is used to build single-page applications.
+	- React allows us to create reusable UI components.
+
+pros -
+1. Easy to Learn and use.
+2. Creating Dynamic Web Applications Becomes Easier.
+3. Reusable components.
+4. Performance.
+5. JavaScript Library.
+6. Virtual DOM
+
+cons - 
+1. JSX as a barrier.
+2. The high pace of development.

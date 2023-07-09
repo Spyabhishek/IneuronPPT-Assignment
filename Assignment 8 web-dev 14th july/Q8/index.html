@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero {
+            height: 250px;
+            width: 250px;
+            background-color: red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .btn{
+            text-align: center;
+        }
+        button{
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+
+        function CounterApp() {
+            const [counter, setCounter] = useState(0);
+
+            const incrementCounter = () => {
+                setCounter(counter + 1);
+            };
+
+            const decrementCounter = () => {
+                setCounter(counter - 1);
+            };
+
+            return (
+                <div class="main">
+                    <div class="hero">
+                        <h1>Counter App</h1>
+                        <h1> {counter} </h1>
+                        <div class="btn">
+                            <button onClick={incrementCounter}>Increment</button>
+                            <button onClick={decrementCounter}>Decrement</button></div>
+                    </div>
+                </div>
+
+            );
+        }
+
+
+
+        const container = document.getElementById('div');
+        const root = ReactDOM.createRoot(container);
+        root.render(<CounterApp />)
+    </script>
+
+</body>
+
+</html>

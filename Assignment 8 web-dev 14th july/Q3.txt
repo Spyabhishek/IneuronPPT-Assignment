@@ -1,0 +1,13 @@
+Q.3 Difference between Virtual Dom vs Real Dom.
+
+Ans - 
+
+Real DOM -
+The DOM represents the web page often called a document with a logical tree and each  branch of the tree ends in a node and each node contains objects programmers can modify the content of the document using a scripting language like javascript and the changes and updates to the dom are fast because of its tree-like structure but after changes, the updated element and its children have to be re-rendered to update the application UI so the  re-rendering of the UI which make the dom slow all the UI components you need to be rendered for every dom update so real dom would render  the entire list and not only those item that receives the update.
+
+Virtual DOM - 
+- VDOM is the virtual representation of Real DOM
+- React update the state changes in Virtual DOM first and then it syncs with Real DOM
+- Virtual DOM is just like a blueprint of a machine, can do changes in the blueprint but those changes will not directly apply to the machine.
+- Virtual DOM is a programming concept where a virtual representation of a UI is kept in memory synced with “Real DOM ” by a library such as ReactDOM and this process is called reconciliation
+- Virtual DOM makes the performance faster, not because the processing itself is done in less time. The reason is the amount of changed information – rather than wasting time on updating the entire page, you can dissect it into small elements and interactions
