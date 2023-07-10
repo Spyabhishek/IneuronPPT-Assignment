@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Navbar</title>
+    <style>
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .navbar-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .navbar-menu-items {
+            display: none;
+        }
+
+        .navbar-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .navbar-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin-bottom: 5px;
+        }
+
+        /* Media queries for responsive behavior */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar-menu-items {
+                display: none;
+            }
+
+            .navbar-menu-toggle {
+                display: flex;
+            }
+
+            .navbar-menu-toggle.show .navbar-menu-items {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Logo</div>
+        <div class="navbar-menu">
+            <div class="navbar-menu-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="navbar-menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.navbar-menu-toggle');
+            var menuItems = document.querySelector('.navbar-menu-items');
+
+            menuToggle.classList.toggle('show');
+            menuItems.classList.toggle('show');
+        }
+
+    </script>
+</body>
+
+</html>

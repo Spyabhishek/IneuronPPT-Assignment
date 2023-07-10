@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input App</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #input-box {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="input-box" placeholder="Enter your text">
+        <button onclick="addItem()">Submit</button>
+    </div>
+
+    <ol id="item-list"></ol>
+
+    <script>
+        function addItem() {
+            var inputBox = document.getElementById('input-box');
+            var itemList = document.getElementById('item-list');
+
+            var text = inputBox.value;
+            if (text !== '') {
+                var listItem = document.createElement('li');
+                listItem.textContent = text;
+                itemList.appendChild(listItem);
+                inputBox.value = '';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
