@@ -1,0 +1,27 @@
+Q.6 Explain the concept of React fragments and when you should use them.
+
+Ans - In React, fragments provide a way to group multiple elements together without introducing an additional wrapper element in the DOM. Fragments are essentially empty JSX tags that act as a container for a list of child elements. They allow you to return multiple elements from a component without adding an unnecessary wrapping element.
+
+Uses 
+
+- Avoiding unnecessary wrapper elements: When rendering a list or a collection of elements, you typically need to wrap them inside a parent element. However, in some cases, this extra wrapper element is unnecessary and can negatively impact the structure or styling of the rendered output. Fragments solve this problem by allowing you to group elements without introducing an additional wrapper element.
+
+- Reducing unnecessary DOM nodes: By using fragments, you can avoid adding extra DOM nodes to the rendered output. This can help improve performance and reduce memory usage, particularly when dealing with large lists or nested components.
+
+- Working with portals: React portals allow you to render components outside their parent hierarchy. Fragments can be used as the outermost container for portals, enabling you to render portal content without introducing an unnecessary wrapping element.
+
+Ex - 
+import React from 'react';
+
+function MyComponent() {
+  return (
+    <>
+      <h1>Title</h1>
+      <p>Some content here</p>
+    </>
+  );
+}
+
+In this case, the <> and </> act as the opening and closing tags for the fragment
+
+In summary, React fragments provide a way to group elements without introducing additional DOM nodes or unnecessary wrapper elements. They are useful for improving performance, maintaining proper structure, and working with features like lists, portals, or conditional rendering where a single parent wrapper element is not desired.

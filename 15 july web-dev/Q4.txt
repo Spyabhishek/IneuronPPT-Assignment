@@ -1,0 +1,28 @@
+Q.4 What is the significance of the "key" prop in React lists, and why is it important to use it correctly?
+
+Ans - The "key" prop is a special attribute in React that is used when rendering lists of elements. It helps React identify each item in the list uniquely and efficiently reconcile the changes that occur within the list.
+
+When rendering a list of elements in React, each item needs a unique identifier. The "key" prop serves as this identifier. It should be assigned a value that uniquely identifies each item in the list, such as an ID or a unique attribute from the data source.
+
+It is important as :
+1. Efficient reconciliation.
+2. Stable component identity.
+3. Optimizing rendering and performance.
+
+
+Ex - 
+function MyComponent() {
+  const items = [
+    { id: 1, name: 'Item 1' },
+    { id: 2, name: 'Item 2' },
+    { id: 3, name: 'Item 3' },
+  ];
+
+  return (
+    <ul>
+      {items.map(item => (
+        <li key={item.id}>{item.name}</li>
+      ))}
+    </ul>
+  );
+}

@@ -1,0 +1,18 @@
+Q.5 What is the significance of using "setState" instead of modifying state directly in React?
+
+Ans - In React, it is significant to use the setState function instead of modifying state directly :
+
+- Ensures proper state updates : By using setState, you inform React that the state has changed and that it needs to update the component and its child components accordingly. 
+
+- Maintains component consistency : When you update state directly, you bypass React's mechanisms for handling state changes and can cause inconsistencies between the component's rendered output and its internal state. Using setState ensures that React maintains a consistent state model throughout the component tree.
+
+- Enables batched updates: React batches multiple setState calls together for performance optimization. When multiple setState calls are made in the same event handler or lifecycle method, React queues and performs the updates together in a single batch. This helps avoid unnecessary re-renders and improves performance.
+
+- Supports asynchronous updates: The setState function in React is asynchronous, meaning that the state updates may not be applied immediately. React may batch and defer the state updates for performance reasons. When using callbacks with setState, you can rely on the latest state values in an update, even if the updates are not applied immediately.
+
+- Ex -
+// Incorrect usage: Modifying state directly
+this.state.count = this.state.count + 1;
+
+// Correct usage: Using setState
+this.setState({ count: this.state.count + 1 });

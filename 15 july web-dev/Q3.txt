@@ -1,0 +1,59 @@
+Q.3 How to pass data from one component to another component.
+
+Ans - 
+In React, there are several ways to pass data from one component to another component. The method you choose depends on the relationship between the components and the complexity of the data you need to pass.
+
+1. Props: The most common and straightforward way to pass data between components is by using props. You can pass data from a parent component to its child component by including the data as attributes when rendering the child component. The child component can access the data through its props.
+
+Ex - // ParentComponent.js
+import React from 'react';
+import ChildComponent from './ChildComponent';
+
+function ParentComponent() {
+  const data = 'Hello from parent';
+
+  return <ChildComponent message={data} />;
+}
+
+// ChildComponent.js
+import React from 'react';
+
+function ChildComponent(props) {
+  return <p>{props.message}</p>;
+}
+
+2. Context: React Context provides a way to share data between components without passing it explicitly through props at each level of the component tree. You can create a context using the createContext function and provide a value. Components can access the context's value using the useContext hook.
+
+Ex - // DataContext.js
+import React, { createContext } from 'react';
+
+const DataContext = createContext();
+
+export default DataContext;
+
+// ParentComponent.js
+import React from 'react';
+import ChildComponent from './ChildComponent';
+import DataContext from './DataContext';
+
+function ParentComponent() {
+  const data = 'Hello from parent';
+
+  return (
+    <DataContext.Provider value={data}>
+      <ChildComponent />
+    </DataContext.Provider>
+  );
+}
+
+// ChildComponent.js
+import React, { useContext } from 'react';
+import DataContext from './DataContext';
+
+function ChildComponent() {
+  const data = useContext(DataContext);
+
+  return <p>{data}</p>;
+}
+
+3. State management libraries: For complex applications with a large amount of shared data or when the components are not directly related, you can use state management libraries like Redux
