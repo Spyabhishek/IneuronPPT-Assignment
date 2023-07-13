@@ -1,0 +1,40 @@
+Q.8 Create a Backend For Counter Web App with Api Endpoint for Managing Counter Using Express
+- ‘/’ → send counter data as {counter:counter}
+- `/increment` → increment counter by 1 and send in response latest data as {counter:counter}
+- `/decrement` → decrement counter by 1 and send in response latest data as {counter:counter}
+
+Note: Using Express is Mandatory for this Question
+
+Ans - 
+
+const express = require('express');
+const app = express();
+
+// Initialize counter
+let counter = 0;
+
+// Middleware to parse JSON bodies
+app.use(express.json());
+
+// Route to get the counter data
+app.get('/', (req, res) => {
+  res.json({ counter });
+});
+
+// Route to increment the counter
+app.post('/increment', (req, res) => {
+  counter++;
+  res.json({ counter });
+});
+
+// Route to decrement the counter
+app.post('/decrement', (req, res) => {
+  counter--;
+  res.json({ counter });
+});
+
+// Start the server
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});

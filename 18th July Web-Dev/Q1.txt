@@ -1,0 +1,27 @@
+Q.1 Explain Middlewares in NodeJS ?
+
+Ans - 
+In Node.js, middleware refers to a series of functions or code snippets that are executed in a sequential manner during the request-response cycle. Middleware functions have access to the request and response objects, and they can modify or enhance them before passing them to the next middleware or terminating the request-response cycle.
+
+Middleware functions are commonly used in web development frameworks like Express.js to perform various tasks such as logging, authentication, error handling, request parsing, and more. They provide a modular and flexible way to handle common functionalities without duplicating code across multiple routes or handlers.
+
+The order in which middleware functions are defined is important, as they are executed in the same order during the request-response cycle. Each middleware function has access to the req (request) and res (response) objects, as well as a callback function 'next()', which is used to pass control to the next middleware in the chain.
+
+Example - 
+const express = require('express');
+const app = express();
+
+// Logger middleware
+app.use((req, res, next) => {
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+  next();
+});
+
+// Route handler
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+app.listen(3000, () => {
+  console.log('Server is listening on port 3000');
+});

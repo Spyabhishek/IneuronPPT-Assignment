@@ -1,0 +1,9 @@
+Q.2 Why use Express Over NodeJS ?
+
+Ans - Express is a web application framework for Node.js that provides a higher level of abstraction and additional features compared to the core Node.js HTTP module. Here are some reasons why developers prefer using Express over working with Node.js directly:
+
+- Simplicity and Ease of Use: Express simplifies the process of building web applications in Node.js by providing a minimalist and intuitive API. It abstracts away many low-level details and common tasks, such as routing, middleware handling, and request/response handling, making it easier to develop web applications.
+
+- Routing: Express provides a flexible and powerful routing system that allows developers to define routes for different HTTP methods (GET, POST, etc.) and URLs. This makes it easy to handle various types of requests and define different actions for each route.
+
+- Middleware Support: Express has built-in support for middleware, which enables developers to easily add functionality to the request-response cycle. Middleware functions can handle tasks like authentication, logging, request parsing, error handling, and more. Express middleware can be used in a modular way, allowing developers to reuse and combine middleware functions as needed.

@@ -1,0 +1,16 @@
+Q.3 What are REST API ?
+
+Ans - REST (Representational State Transfer) is an architectural style for designing networked applications. REST APIs (Application Programming Interfaces) are a set of rules and conventions that allow systems to communicate with each other over the internet using HTTP (Hypertext Transfer Protocol).
+
+Key characteristics of REST APIs include:
+
+- Stateless: Each request from a client to a server contains all the necessary information to understand and process the request. The server does not maintain any client state between requests.
+
+- Resource-Based: REST APIs are based on resources, which are identified by unique URIs (Uniform Resource Identifiers). Resources represent entities such as users, products, or articles. Clients interact with these resources by sending requests to their corresponding URIs.
+
+- HTTP Verbs: REST APIs use the standard HTTP methods (verbs) to perform different operations on resources. The most common HTTP methods used in RESTful APIs are:
+
+GET: Retrieve a representation of a resource.
+POST: Create a new resource.
+PUT: Update an existing resource.
+DELETE: Remove a resource.

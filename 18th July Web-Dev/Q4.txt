@@ -1,0 +1,15 @@
+Q.4 What is the use of MongoDB?
+
+Ans - MongoDB is a popular open-source NoSQL database that provides a flexible and scalable solution for storing and managing large volumes of unstructured and semi-structured data. It offers several features and benefits that make it suitable for various applications:
+
+- Flexible Data Model: MongoDB uses a flexible document-based data model called BSON (Binary JSON). BSON documents are similar to JSON objects and allow developers to store and retrieve complex, nested data structures easily. The flexible schema allows for easy evolution of data models as application requirements change over time.
+
+- Scalability and Performance: MongoDB is designed to scale horizontally across multiple servers, allowing applications to handle large amounts of data and high traffic loads. It supports automatic sharding, which distributes data across multiple machines, enabling horizontal scaling and improved read/write performance.
+
+- High Availability and Fault Tolerance: MongoDB provides built-in support for high availability through replica sets. Replica sets consist of multiple MongoDB instances, where one acts as the primary node and others as secondary nodes. If the primary node fails, a secondary node automatically takes over, ensuring continuous availability of data.
+
+- Rich Query Language: MongoDB supports a powerful query language with a wide range of query operators and functions. It allows for complex queries, including filtering, sorting, aggregation, geospatial queries, and text search. Queries can be written using a flexible JSON-like syntax, making it easy to work with data.
+
+- Indexing: MongoDB supports various indexing options to optimize query performance. Developers can create indexes on single fields, compound indexes on multiple fields, and geospatial indexes for location-based queries. Indexes can significantly improve query execution time by allowing the database to quickly locate and retrieve the requested data.
+
+- Flexible Deployment Options: MongoDB can be deployed on-premises or in the cloud, providing flexibility for different deployment scenarios. It has extensive cloud integration with major cloud providers, such as AWS, Azure, and Google Cloud Platform, making it easy to deploy.
